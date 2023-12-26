@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+</head>
+<body>
+    <script>
+        // Q1: Return the Sum of Two Numbers
+
+        // Create a function that takes two numbers as arguments and returns their sum.
+
+        // addition(3, 2) ➞ 5
+        // addition(-3, -6) ➞ -9
+        // addition(7, 3) ➞ 10
+
+        function addition(a,b){
+            let sum = `A is ${a} and B is ${b} and Total Sum is ${a+b}`;
+            return sum;
+        }
+        // let print = addition(-10,-40);
+        // document.write(print);
+        document.write(addition(7,5));
+        document.write("<br>");
+    </script>
+
+    <script>
+        // Q2: Return the Next Number from the Integer Passed
+
+        // Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+        // addition(0) ➞ 1
+        // addition(9) ➞ 10
+        // addition(-3) ➞ -2
+
+        function nextNumber(a){
+            let n = a + 1;
+            return n;
+        }
+        let output = nextNumber(-10);
+        document.write(output);
+        document.write("<br>");
+    </script>
+
+    <script>
+        // Q3: Area of a Triangle
+        // Write a function that takes the base and height of a triangle and return its area.
+
+        // Examples
+        // triArea(3, 2) ➞ 3
+        // triArea(7, 4) ➞ 14
+        // triArea(10, 10) ➞ 50
+        // Note: The area of a triangle is: (base * height) / 2
+
+        function triangle(base,height){
+            let area =  (base * height) / 2;
+            let areaofTriangle = `Base is ${base} and Height is ${height} and Area of Triangle is ${area}`;
+            return areaofTriangle;
+        }
+      
+        document.write(triangle(3,2));
+        document.write("<br>");
+    </script>
+
+    <script>
+        // Q4: Convert Age to Days
+        // Create a function that takes the age in years and returns the age in days.
+
+        // Examples
+        // calcAge(65) ➞ 23725
+        // calcAge(0) ➞ 0
+        // calcAge(20) ➞ 7300
+
+            function days(year){
+                let y =  year * 365;
+                let output = `Given Year is ${year} and Total Days ${y}`;
+                return output;
+            }
+            document.write(days(20));
+            document.write("<br>");
+    </script>
+    <script>
+        // Q5: Power Calculator
+        //     Create a function that takes voltage and current and returns the calculated power.
+
+        //     Examples
+        //     circuitPower(230, 10) ➞ 2300
+        //     circuitPower(110, 3) ➞ 330
+        //     circuitPower(480, 20) ➞ 9600
+
+        function power(v, c){
+            let cal =`Voltage is ${v} and ${c} Total Power is ${v*c}`;
+            document.write(cal);
+        }
+        power(110,3);
+        document.write("<br>");
+    </script>
+
+    <script>
+        // Q6: Return Something to Me!
+            // Write a function that returns the string "something" joined with a space " " and the given argument a.
+
+            // Examples
+            // giveMeSomething("is better than nothing") ➞ "something is better than nothing"
+
+            // giveMeSomething("Bob Jane") ➞ "something Bob Jane"
+
+            // giveMeSomething("something") ➞ "something something"
+
+            function message(str){
+                let msg = `Something ${str}`;
+                document.write(msg);
+            }
+            message("is better than nothing");
+            document.write("<br>");
+    </script>
+    <script>
+//         Q7: Is the Number Less than or Equal to Zero?
+            // Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+
+            // Examples
+            // lessThanOrEqualToZero(5) ➞ false
+
+            // lessThanOrEqualToZero(0) ➞ true
+
+            // lessThanOrEqualToZero(-2) ➞ true
+
+        function zero(n){
+            if(n<=0){
+            document.write(true);
+            }
+            else{
+                document.write(false);
+            }       
+        }
+        zero(0);
+    </script>
+
+    <script>
+        // Q8: Less Than 100?
+        // Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+
+        // Examples
+        // lessThan100(22, 15) ➞ true
+        // // 22 + 15 = 37
+
+        // lessThan100(83, 34) ➞ false
+        // // 83 + 34 = 117
+
+        // lessThan100(3, 77) ➞ true
+
+
+        function total(a,b){
+            let sum = a + b;
+            document.write(`Sum is ${sum} `);
+            if(sum <= 100){
+                document.write(true);
+            }
+            else{
+                document.write(false);
+            }
+        
+        }
+        total(83,34);
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+
+
+        // let n =prompt();
+        // for(i = 1;i <= n ;i++){
+
+        //     if(i % 2 == 0){
+        //         document.write(i + "<br>");
+        //     }
+
+        // }
+        //-------------------------------------
+        // let n =prompt();
+        // for(i = 0;i <= n ;i++){
+
+        //     if(i % 2 == 0){
+        // document.write("wrong");
+        //     }
+        //     else{
+
+        //         document.write(i + "<br>");
+        //     }
+        // }
+        //-------------------------------
+
+        // let n =prompt();
+        // for(i = 0;i <= n ;i++){
+
+        //     if(i % 2 == 1){
+        //         document.write(i + "<br>");
+        //     }
+
+        // }
+        //---------------------------------
+        let n =prompt();
+
+        document.write("<table>");
+            for(let a = 1;a <= 10;a++){
+                document.write("<tr>");
+                for(let b = a; b <= n; b =b+10){
+                    document.write("<td>"+ b +"</td>" );
+                }
+                document.write("</tr>");
+            }
+            document.write("<table>");
+        // ---------------------------------
+
+    </script>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+    <!-- <script>
+        let a =0;
+        let b = 1;
+        let c;
+        for(let i=1;i<=10;i++){
+            b=a+i;
+            document.write(b+"<br>");
+            a = b;
+            i=a;
+        }
+    </script> -->
+</body>
+
+</html>
