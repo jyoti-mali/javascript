@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Array</title>
+</head>
+<body>
+    <script>
+        /*
+Implement a function that returns an updated array with 1 left rotation on an array of integers
+
+rotateLeft([1,2,3,4]) // returns [2,3,4,1]
+*/
+
+const arr = [1,2,3,4];
+function rotateArray(){
+    arr.shift();
+    arr.push(1);
+    return arr;
+}
+console.log(rotateArray());
+    </script>
+</body>
+</html>

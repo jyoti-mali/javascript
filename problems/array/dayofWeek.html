@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        /*
+Write a function 'returnDay' that takes one parameter(number from 1 to 7) and returns the day of the week.
+(where 1 is Monday, 2 is Tuesday, 3 is Wednesday, etc).
+
+If the number is less than 1 or greater than 7, the function should return null.
+Note: Store the days of the week in the array.
+*/
+        const day = ["Monday","Tuesday","Wednseday","Thursday","Friday","Saturday","Sunday"];
+       
+        function returnDay(n){
+            if(n >= 1 && n <= 7){               
+                    return day[n-1];        
+            }
+            else{
+                return null;
+            }
+        }
+       document.write(returnDay(3));
+    //    console.log(returnDay(7));
+    </script>
+    
+</body>
+</html>
