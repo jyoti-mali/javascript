@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 5</title>
+</head>
+<body>
+    <script>
+        // Q5: Power Calculator
+        //     Create a function that takes voltage and current and returns the calculated power.
+
+        //     Examples
+        //     circuitPower(230, 10) ➞ 2300
+        //     circuitPower(110, 3) ➞ 330
+        //     circuitPower(480, 20) ➞ 9600
+
+        function power(v, c){
+            let cal =`Voltage is ${v} and ${c} Total Power is ${v*c}`;
+            document.write(cal);
+        }
+        power(110,3);
+        document.write("<br>");
+    </script>
+</body>
+</html>

@@ -101,17 +101,17 @@
     //     document.write("<br>");
 
 //pattern 5   -----------------------------  
-        // for(let a = 1;a <= 4;a++){
-        //     for(let b = 1; b <= 4;b++){
-        //         if(b <= a){
-        //             document.write("&nbsp;");
-        //         }
-        //         else{
-        //             document.write("# ");
-        //         }
-        //     }
-        //     document.write("<br>");
-        // }
+        for(let a = 1;a <= 4;a++){
+            for(let b = 1; b <= 4;b++){
+                if(a > b){
+                    document.write("&nbsp");
+                }
+                else{
+                    document.write(b+" ");
+                }
+            }
+            document.write("<br>");
+        }
     </script>
     <!-- <script>
           for(let a = 1;a <= 4;a++){

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem 8</title>
+</head>
+<body>
+    
+    <script>
+        // Q8: Less Than 100?
+        // Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+
+        // Examples
+        // lessThan100(22, 15) ➞ true
+        // // 22 + 15 = 37
+
+        // lessThan100(83, 34) ➞ false
+        // // 83 + 34 = 117
+
+        // lessThan100(3, 77) ➞ true
+
+
+        function total(a,b){
+            let sum = a + b;
+            document.write(`Sum is ${sum} `);
+            if(sum <= 100){
+                document.write(true);
+            }
+            else{
+                document.write(false);
+            }
+        
+        }
+        total(83,34);
+    </script>
+</body>
+</html>

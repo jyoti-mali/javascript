@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pascal Triangle</title>
+</head>
+<body>
+<script>
+    let a = 10;
+    function add(){
+        var a =20;
+        document.write(a);
+    }
+    document.write(a);
+    add();
+</script>
+
+
+    <!-- <script>
+        // outer loop for rows 
+        for (let i = 1; i <= 5; i++) { 
+      
+            // inner loop 1 for leading white spaces 
+            for (let j = 0; j < 5 - i; j++) { 
+                document.write(" &nbsp "); 
+            } 
+      
+            let C = 1; // coefficient 
+      
+            // inner loop 2 for printing numbers 
+            for (let k = 1; k <= i; k++) { 
+                document.write(C +" "); 
+                C = C * (i - k) / k; 
+            } 
+            document.write("<br>"); 
+        } 
+         </script> -->
+</body>
+</html>
