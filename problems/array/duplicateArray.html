@@ -14,12 +14,20 @@
         For input arr=[1,2] duplicate(arr) should return [1,2,1,2]
 */
 
-        function duplicate(){
-            const arr = [1,2];
-            arr.push(1,2);
-           return arr;
+        function duplicate(arr){
+           let duplicateArray = [];
+            for(let a = 0;a <= arr.length; a++){
+           duplicateArray.push(arr[a]);
+            }
+            for(let a = 0;a <= arr.length; a++){
+           duplicateArray.push(arr[a]);
+            }
+           
+           return duplicateArray;
         }
-    console.log(duplicate());
+        let orginalArray = [1,2,3,4];
+        let result = duplicate(orginalArray );
+        console.log(result);
     </script>
 </body>
 
