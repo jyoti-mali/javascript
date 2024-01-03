@@ -13,13 +13,17 @@ Implement a function that returns an updated array with 1 left rotation on an ar
 rotateLeft([1,2,3,4]) // returns [2,3,4,1]
 */
 
-const arr = [1,2,3,4];
-function rotateArray(){
-    arr.shift();
-    arr.push(1);
-    return arr;
-}
-console.log(rotateArray());
+
+    function rotateLeft(arr){ 
+        //console.log(arr);
+        let firstElement = arr.shift();
+        arr.push(firstElement);
+        return arr;
+    
+    }
+    const originalArray = ["j","y","o","t","i"];
+    let finalArray = rotateLeft(originalArray);
+    console.log(finalArray);
     </script>
 </body>
 </html>

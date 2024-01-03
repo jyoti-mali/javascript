@@ -19,13 +19,16 @@
         
                 function zero(n){
                     if(n<=0){
-                    document.write(true);
+                return true;
                     }
                     else{
-                        document.write(false);
-                    }       
+                       return false;
+                    } 
+                      
                 }
-                zero(0);
+                let num = +prompt();
+                let result = zero(num);
+                document.write(result);
             </script>
 </body>
 </html>

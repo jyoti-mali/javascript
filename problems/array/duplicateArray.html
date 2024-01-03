@@ -14,12 +14,22 @@
         For input arr=[1,2] duplicate(arr) should return [1,2,1,2]
 */
 
-        function duplicate(){
-            const arr = [1,2];
-            arr.push(1,2);
-           return arr;
-        }
-    console.log(duplicate());
+function duplicate(arr) {
+    // Create an empty array to store the duplicated elements
+    let duplicatedArray = [];
+    for (let i = 0; i < arr.length; i++) {
+      duplicatedArray.push(arr[i]);
+    }
+    for (let i = 0; i < arr.length; i++) {
+      duplicatedArray.push(arr[i]);
+    } 
+    return duplicatedArray;
+  }
+ 
+ 
+  let inputArray = ["jyoti", "mali","darshan","mali"];
+  let result = duplicate(inputArray);
+  console.log(result);
     </script>
 </body>
 
