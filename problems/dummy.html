@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Numbers Table</title>
+</head>
+
+<body>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <table>
+        <tr>
+            <th>Natural Numbers</th>
+            <script>
+                function naturalno(num) {
+                    for (let n = 1; n <= num; n++) {
+                        document.write(`<td>${n}</td>`);
+                    }
+                }
+                
+
+            </script>
+        </tr>
+        </table>
+        <table>
+        <tr>
+            <th>Natural Numbers</th>
+            <script>
+                function evenNo(num) {
+                    for (let n = 2; n <= num; n += 2) {
+                        document.write(`<td>${n}</td>`);
+                    }
+                }
+
+                let inputno = +prompt();
+                naturalno(inputno);
+                evenNo(inputno);
+                oddNo(inputno);
+            </script>
+        </tr>
+    </table>
+ 
+</body>
+
+</html>
