@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            height: 1500px;
+     
+        }
+        #scrollColor{
+            width: 98%;
+            height: .3rem;
+            background-color: rgb(182, 179, 179);
+            position: fixed;
+        }
+        #loader{
+            background-color: tomato;
+            width: 1rem;
+            height: .3rem;
+            position: absolute;
+        }
+    </style>
+    <div id="scrollColor">
+        <div id="loader"></div>
+    </div>
+    <script>
+        window.addEventListener('scrollY',scrolling);
+
+        function scrolling(){
+            let colordiv = document.getElementById('loader');
+            const scrollPosition = window.scrollY;
+            colordiv.style.width = scrollPosition;
+        }
+        scrolling();
+    </script>
+</body>
+</html>

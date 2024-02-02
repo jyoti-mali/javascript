@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Color</title>
+</head>
+
+<body>
+  <!-- Change color using click event  -->
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    div {
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+    }
+  </style>
+  <div></div> <br>
+  <section>
+  <button id="btn-color">Change Color</button>
+  <button id="btn-shape">Change Shapes</button>
+</section>
+  <!-- dom target  -->
+  <script>
+    let div = document.getElementsByTagName('div')[0];
+    let btn = document.getElementById('btn-color');
+    const ar = ['orange', 'blue', 'green', 'pink'];
+    let i = 0;
+    div.style.backgroundColor = ar[i];
+
+    // change colors ---------------------
+
+    btn.addEventListener('click', function () {
+      // div.style.backgroundColor = 'red';
+      i++;
+      div.style.backgroundColor = ar[i];
+      div.style.transition = '4s';
+    });
+
+    // change shapes ------------
+    let shape = document.getElementById('btn-shape');
+    const ary = ["rotate(0)","rotate(10deg)","skew(40deg)","scaleX(2)"];
+    let s = 0;
+    div.style.transform = ary[s];
+    shape.addEventListener('click', function () {
+      // div.style.transform = "rotate(20deg)";
+      s++;
+      div.style.transform = ary[s];
+      div.style.transition = '2s';
+    });
+  </script>
+
+</body>
+
+</html>

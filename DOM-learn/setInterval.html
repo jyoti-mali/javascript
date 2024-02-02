@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+</head>
+<body>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+    <div id="divset"></div> <button id="stop" onclick="stop()">stop</button>
+    <script>
+        var a =200;
+        var is = setInterval(move,500);
+        function move(){
+            a = a+5;
+            // console.log(a);
+            if(a == 300){
+                clearInterval(is);
+            }else{
+                document.getElementById('divset').style.width = a+ 'px';
+                document.getElementById('divset').style.transition = '.5ms';
+            }
+        }
+
+    </script>
+</body>
+</html>

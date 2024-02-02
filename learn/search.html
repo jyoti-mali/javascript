@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Box</title>
+</head>
+<body>
+    <div id="box">
+        <form action="" id="sform">
+            <input type="search" name="searchbox" id="searchbox">
+            <input type="button" value="Search" id="searchbtn" onclick="searching()">
+        </form>
+        <p id="output"></p>
+    </div>
+    <!-- <script>
+        let sform = document.getElementById('sform');
+        let searchbtn = document.getElementById('searchbtn');
+        let output = document.getElementById('output');
+        function searching(){
+           let x = sform.elements[0].value;
+           console.log(x);
+        //    output.innerHTML = x;
+           for(let i =0 ;i <=x.length;i++){
+            output.innerHTML = x;
+           }
+        }
+    </script> -->
+   
+	<form> 
+		Type Here: <input type="text" onkeypress="searchFun(event)" /> 
+	</form> 
+	<p id="output" style="color:green; font-size: 20px; font-weight: bold;"> </p> 
+
+	<script> 
+		var output = document.getElementById('output'); 
+
+		function searchFun(e) { 
+			var key; 
+			if (window.event) { 
+				key = e.keyCode; 
+			} else if (e.which) { 
+				key = e.which; 
+			} 
+			var str = output.innerHTML; 
+			str += String.fromCharCode(key); 
+			output.innerHTML = str; 
+		} 
+	</script> 
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Event</title>
+</head>
+
+<body>
+    <h1>Windows Events</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, doloremque?</p>
+    <button onclick="fun()">Click ME</button>
+    <input type="text" id="keys" onkeyup="keyPress()">
+    <p id="op"></p>
+    <script>
+        // let win = window.document;
+        // console.log(win);
+        function keyPress() {
+            let a = document.getElementById('keys').value;
+            let op = document.getElementById('op');
+            op.innerHTML = a;
+        }
+        function fun(){
+            alert('Hello Manish !');
+        }
+    </script>
+</body>
+
+</html>

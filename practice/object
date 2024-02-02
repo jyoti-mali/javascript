@@ -1,0 +1,7 @@
+num = ["one","two","three","four","five"];
+        for(let n of num){
+          if(n == "three"){
+            continue;
+          }
+           console.log(n);
+        }

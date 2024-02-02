@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in Array</title>
+</head>
+
+<body>
+    <!-- <script>
+        const stud = [ 
+            { name:'jyoti',age : 30, gender : 'female'},
+            { name:'swati',age : 35, gender : 'female'}
+        ];
+        for(let a = 0 ;a <= stud.length;a++){
+
+            document.write(stud[a].name +" "+stud[a].age+ " "+stud[a].gender+ "<br>");
+        }
+        console.log(stud.age);
+    </script> -->
+
+    <script>
+        const student = [
+            {
+                name: 'aniket',
+                age: 28,
+                phoneNo: 123456789,
+                gender: 'male',
+                address: {
+                    road: 'Mumbai Agra Road',
+                    city: 'Nashik'
+                }
+            },
+            {
+                name: 'jyoti',
+                age: 28,
+                phoneNo: 123456789,
+                gender: 'female',
+                address: {
+                    road: 'Shivaji Nagar',
+                    city: 'Pune'
+                }
+            }
+
+        ];
+        const courses = [
+            { courseName: 'webDevelopment', fees: 28000, city: 'nashik' },
+            { courseName: 'webDesigner', fees: 30000, city: 'nashik' }
+        ];
+
+        function display(p) {
+            for (let i = 0; i <= student.length; i++) {
+                if (i == p) {
+                    //    console.log(student[i-1]);
+                    document.write(`${student[i - 1].name} ${student[i - 1].age} ${student[i - 1].phoneNo} ${student[i - 1].gender} ${student[i - 1].address.road}  ${student[i - 1].address.city} <br>`);
+                    
+                }
+            }
+
+            for (let j = 0; j <= courses.length; j++) {
+                if (j == p) { 
+                    console.log(courses[j-1]);
+                    document.write(`${courses[j - 1].courseName} ${courses[j - 1].fees} ${courses[j - 1].city} <br>`);
+                   
+                }
+            }
+            return;
+        }
+
+        let print = +prompt();
+        let result = display(print);
+
+    </script>
+
+    <!-- <script>
+        const students = [ {
+                jyoti: {
+                    fname: 'jyoti',
+                    lname: 'mali',
+                    gender: 'female',
+                    address: { lane: 'shivaji nagar',city: 'pune' }
+                },
+                darshan: {
+                    fname: 'darshan',
+                    lname: 'mahajan',
+                    gender: 'male',
+                    address: { lane: 'link road',city: 'nashik'}
+                }
+            }];
+
+        const courses = [{  
+                webDev : { courseName: 'web development', fees: 28000, place: 'pune' },
+                uiUx : { courseName: 'UI UX Designer', fees: 58000, place:'nashik' }
+            }];
+
+            function display(p){
+                for(let key in students){
+                    console.log(students[key]);
+                    document.write( `${students[key]}`);
+                }
+                return;
+            }
+            let print = prompt("Enter Number : ");
+            document.write(display(print));
+    </script> -->
+</body>
+
+</html>

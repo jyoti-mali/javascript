@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="login-form.php" id="loginForm">
+        <input type="email" name="ab" id="" placeholder="First name">
+        <input type="password" placeholder="last name">
+        <input type="text" name="city" id="city">
+        <input type="button" value="Submit">
+    </form>
+    <br>
+    <input type="button" value="check" id="check" onclick="checkfun()">
+    <p id="output"></p>
+
+    <script>
+        /*
+        .action;
+        .elements.length;
+        .elements[0].value;
+        .elements.item(0).value;
+        .elements.namedItem().value;
+        .reset();
+        .submit()
+        */
+
+        let form = document.getElementById('loginForm');
+        let check = document.getElementById('check');
+        let output = document.getElementById('output');
+
+        function checkfun() {
+            console.log("testing");
+            // let x = form.submit();
+            // let x = form.reset();
+            // let x = form.action;
+            // let x = form.elements.length;
+            // let x = form.elements[0].value;
+            let x = form.elements.item(1).value;  //print val in password
+            // let x = form.elements.namedItem('city').value;
+            console.log(x);
+            //print in paragraph
+            output.innerHTML = x;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <p id="test"></p>
+    <!-- <script>
+        let text = "HELLO WORLD";
+        // let char = text.charAt(3);
+        // let char = text.charCodeAt(0);
+        let char = text.at(1);
+        let txt = document.getElementById('test').innerHTML = char;
+    </script> -->
+
+    <script>
+        let heading = "Template String";
+        let arr = ["one", "two", "three","four"];
+
+       let html = `<h2>${heading}</h2><ul>`;
+
+
+        for(let i of arr){
+            html+=`<li>${i}</li>`;
+        }
+        html+=`</ul>`;
+        document.getElementById('test').innerHTML=html;
+
+        let a = 1523e-3;
+        document.write(a);
+    </script>
+</body>
+
+</html>

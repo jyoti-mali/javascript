@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Numbers</title>
+</head>
+<body>
+    <script>
+        let num = 121;
+   
+        function isPalindrome(no){
+            if(no < 0){
+                return 0;
+            }
+            let originalno = no;
+            let rev = 0;
+            while(no > 0){
+                let d = no % 10;
+                rev = rev * 10 + d;
+                no = no / 10;
+            }
+            return originalno == rev;
+        }
+        isPalindrome(num);
+    </script>
+</body>
+</html>

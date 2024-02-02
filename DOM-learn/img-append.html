@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- createElement(); -->
+    <!-- setAttribute(); -->
+    <!-- appendChild(); -->
+
+
+    <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sit harum in laboriosam et sed vitae at
+        dicta
+        corrupti eveniet velit nostrum ratione laudantium aliquam, eligendi blanditiis. Quisquam, perspiciatis mollitia.
+    </p>
+    <div id="popup"></div>
+    <button onclick="img()">Click Me!</button>
+
+    <script>
+        function img() {
+
+            let img = document.createElement('img');
+            img.setAttribute('src', 'testing.jpg');
+            img.setAttribute('width', '500px');
+            img.setAttribute('alt', 'lorem');
+            document.body.appendChild(img);
+
+            let para = document.getElementById('p');
+            para.innerHTML = "Hello";
+            para.style.backgroundColor = 'red';
+
+            let h = document.createElement('h1');
+            h.innerHTML="Heading H1";
+            h.setAttribute('style','color:green');
+            document.body.appendChild(h);
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
