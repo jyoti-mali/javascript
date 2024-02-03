@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scroll Event Example</title>
   <style>
     body {
-      height: 1500px; /* Just for demonstration - to create a scrollable page */
+      height: 1500px;
+      /* Just for demonstration - to create a scrollable page */
     }
+
     #scrollInfo {
       position: fixed;
       top: 10px;
@@ -16,27 +19,46 @@
       padding: 10px;
       border: 1px solid #ccc;
     }
-  
   </style>
 </head>
+
 <body>
 
-<div id="scrollInfo">Scroll position: 0px</div>
+  <div id="scrollInfo">Scroll position: <span id="pixels">0px</span></div>
 
-<script>
-  // Function to update scroll position information
-  function updateScrollInfo() {
-    const scrollPosition = window.scrollY;
-    document.getElementById('scrollInfo').innerText = 'Scroll position: ' + scrollPosition + 'px';
+  <script>
+    let scrollbox = document.getElementById('scrollInfo');
+    let pixels = document.getElementById('pixels');
+
+    document.addEventListener('scroll', function () {
+      let d = window.scrollY;
+      pixels.innerHTML = d;
+      console.log(d);
+      if (d <= 400) {
+        scrollbox.style.background = 'red';
+      }
+      else{
+        scrollbox.style.background = 'blue';
+      }
+    });
+  </script>
+
+  <script>
+    // Function to update scroll position information
+    // function updateScrollInfo() {
+    //   const scrollPosition = window.scrollY;
+    //   document.getElementById('scrollInfo').innerText = 'Scroll position: ' + scrollPosition + 'px';
     // wrapper.style.width= scrollPosition;
-  }
 
-  // Attach the updateScrollInfo function to the scroll event
-  window.addEventListener('scroll', updateScrollInfo);
+    // }
 
-  // Initial call to set the initial scroll position
-  updateScrollInfo();
-</script>
+    // Attach the updateScrollInfo function to the scroll event
+    // window.addEventListener('scroll', updateScrollInfo);
+
+    // Initial call to set the initial scroll position
+    // updateScrollInfo();
+  </script>
 
 </body>
+
 </html>

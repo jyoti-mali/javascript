@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-        body{
+        body {
             height: 1500px;
-     
+
         }
-        #scrollColor{
-            width: 98%;
+
+        #parentDiv {
+            width: 85%;
             height: .3rem;
+            margin: auto;
             background-color: rgb(182, 179, 179);
             position: fixed;
+            border: 1px solid black;
         }
-        #loader{
-            background-color: tomato;
+
+        #divColor {
+            background-color: black;
             width: 1rem;
             height: .3rem;
             position: absolute;
         }
-    </style>
-    <div id="scrollColor">
-        <div id="loader"></div>
-    </div>
-    <script>
-        window.addEventListener('scrollY',scrolling);
-
-        function scrolling(){
-            let colordiv = document.getElementById('loader');
-            const scrollPosition = window.scrollY;
-            colordiv.style.width = scrollPosition;
+        #circle{
+            width: 100px;
+            height: 100px;      
+            border: 3px solid black;
+            border-top:3px solid white;
+            border-radius: 50%;
+            position: fixed;
+            top: 100px;
+            left: 100px;
         }
-        scrolling();
+    </style>
+    <div id="parentDiv">
+        <div id="divColor"></div>
+    </div>
+    <div id="circle"></div>
+    <script>
+        let parentDiv = document.getElementById('parentDiv');
+        let divColor = document.getElementById('divColor');
+        let circle = document.getElementById('circle');
+
+        document.addEventListener('scroll', function () {
+            let scrollPosition = window.scrollY;
+            console.log(scrollPosition);
+            divColor.style.width = scrollPosition + 'px';
+            circle.style.rotate = scrollPosition + 'deg';
+            // div.style.width = scrollPosition+'px';
+
+        });
     </script>
 </body>
+
 </html>
