@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>
+
+        // rest used at function declaration for combined value in one value
+        // spread used at function calling spread into multiple values
+
+        const arr1 = ['jyoti','roshani','aditi','sonali'];
+        const arr2 = ['jay','sonu','monu'];
+        const fullarr = [...arr2,'student names',...arr1];
+        console.log(fullarr);
+
+
+        // with object 
+        let a = {
+            name : 'jyoti',
+            surname : 'mali'
+        }
+        let b = {
+            name : 'roshani',
+            surname : 'ahire'
+        }
+        let c = {...b, ...a}; //only last object print
+        console.log(c);
+    </script>
+</body>
+</html>

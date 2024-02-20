@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Array</title>
+</head>
+<body>
+    <script>
+        // let user = ["yahoo baba", 25, "delhi", ["gender", 25000]];
+        // let [name, age = 20, city, [male,salary]] = user; //default value
+        // console.log(name);  
+        // console.log(age);  
+        // console.log(city);  
+        // console.log(male);  
+        // console.log(salary);  
+
+
+        // using rest operator 
+        // let user = ["yahoo baba", 25, "delhi", ["gender", 25000]];
+        // let [name, ...args] = user; //default value
+        // console.log(name);  
+        // console.log(args);  
+
+        // function returns array  
+        function users(){
+            return ["yahoo baba",22,"delhi"];
+        }
+
+        let [name,age,city] = users();
+        console.log(age);
+    </script>
+</body>
+</html>

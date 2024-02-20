@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <button onclick="hello()">call function here</button>
+    <script>
+        // function hello(){
+        //     document.write('normal function calling here');
+        // }
+
+        // arrow function 
+        let hello = () => 
+            document.write('Arrow function calling here');
+        
+            // with parameters 
+            let welcome = (name,age) => {
+                return `Hello ${name} ${age}`
+            }
+            console.log(welcome('jyoti mali',30));
+
+            // single parameter
+            let a = (name) => `welcome ${name}`;
+            console.log(a('swati'));
+    </script>
+</body>
+</html>
